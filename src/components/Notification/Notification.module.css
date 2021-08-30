@@ -1,0 +1,5 @@
+.notificationMessage {
+  color: var(--secondary-light-bg-color);
+  font-size: 20px;
+  font-weight: var(--medium-font-weight);
+}

@@ -1,0 +1,38 @@
+.feedbackBtnsWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .feedbackBtnsWrap {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .feedbackBtn:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.feedbackBtn {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  background-color: var(--secondary-light-bg-color);
+  box-shadow: var(--basic-box-shadow);
+  transition: var(--basic-bg-animation);
+
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.feedbackBtn:hover {
+  color: var(--secondary-light-bg-color);
+  background-color: var(--primary-text-color);
+}

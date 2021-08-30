@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "../PageWrap/PageWrap.module.css";
 
 const PageWrap = ({ title, children }) => {
@@ -7,6 +8,11 @@ const PageWrap = ({ title, children }) => {
       {children}
     </div>
   );
+};
+
+PageWrap.propTypes = {
+  children: PropTypes.node,
+  options: PropTypes.string,
 };
 
 export default PageWrap;
